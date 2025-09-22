@@ -1,6 +1,6 @@
 import React from "react";
 import SliderControl from "./SliderControl";
-import useReviewStore from "../globalStore/reviewStore";
+import useReviewStore from "../../globalStore/reviewStore";
 import PageSelection from "./PageSelection";
 function Header() {
   console.log("rendered header.");
@@ -10,7 +10,7 @@ function Header() {
     <div className="bg-gray-700 w-full sticky mb-2 h-12 top-0 flex flex-row items-center justify-between">
       <PageSelection />
       <h1 className="text-white basis-1/5 self-center font-epunda text-2xl underline underline-offset-2 mx-2">
-        Review Knight
+        Crimson Ledger
       </h1>
       {!currentUser && <SliderControl />}
       {currentUser && (

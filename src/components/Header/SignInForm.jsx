@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FormInput from "./FormInput";
-import useReviewStore from "../globalStore/reviewStore";
+import useReviewStore from "../../globalStore/reviewStore";
 
 function SignInForm() {
   console.log("rendered sign-in form.");

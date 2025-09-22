@@ -1,7 +1,7 @@
 import React from "react";
 import useReviewStore from "../globalStore/reviewStore";
 import Title from "./Title";
-
+import ReviewCard from "./ReviewCard";
 function Reviews() {
   console.log("rendered reviews list");
 
@@ -16,17 +16,6 @@ function Reviews() {
         })}
       </div>
     </>
-  );
-}
-
-function ReviewCard({ review }) {
-  return (
-    <div className="text-left w-3/10 border-white border-2 rounded-xl p-4">
-      <h1>Review by {review.user.username}</h1>
-      <h2>Game: {review.game}</h2>
-      <p>{review.text}</p>
-      <h2>{review.score}/10</h2>
-    </div>
   );
 }
 

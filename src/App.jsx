@@ -3,10 +3,11 @@ import BearPage from "./Pages/BearPage";
 import HomePage from "./Pages/HomePage";
 import ReviewsPage from "./Pages/ReviewsPage";
 import GamesPage from "./Pages/GamesPage";
+import GamePage from "./Pages/GamePage";
 import AboutPage from "./Pages/AboutPage";
 import ProfilePage from "./Pages/ProfilePage";
 
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/games" element={<GamesPage />} />
+        <Route path="/game/:title" element={<GamePage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
         <Route path="/profile" element={<ProfilePage />} />
 
