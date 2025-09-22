@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import Slider from "../components/Slider";
-import useReviewStore from "../globalStore/reviewStore";
+import Slider from "./Slider";
+import useReviewStore from "../../globalStore/reviewStore";
 import LinkButton from "./LinkButton";
 
 function SliderControl() {

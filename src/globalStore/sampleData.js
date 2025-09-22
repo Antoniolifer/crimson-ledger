@@ -1,7 +1,7 @@
 const reviews = [
   {
     id: "001",
-    game: "The Witcher 3",
+    game: "The Witcher 3: Wild Hunt",
     text: "The storytelling is on another level. Exploration feels rewarding, and the side quests are often better than main quests in other games.",
     score: 10,
     user: { username: "MossKnight" },
@@ -181,6 +181,256 @@ const reviews = [
   },
 ];
 
-const data = { reviews };
+const games = [
+  {
+    id: "001",
+    title: "The Witcher 3: Wild Hunt",
+    release_date: new Date("2015-05-19"),
+    developer: "CD PROJEKT RED",
+    developer_country: "Poland",
+    cover_image:
+      "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
+    reviews: [], // you can fill with relevant review objects
+    average_score: null,
+  },
+  {
+    id: "002",
+    title: "Elden Ring",
+    release_date: new Date("2022-02-25"),
+    developer: "FromSoftware",
+    developer_country: "Japan",
+    cover_image:
+      "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+    reviews: [],
+    average_score: null,
+  },
+  {
+    id: "003",
+    title: "Cyberpunk 2077",
+    release_date: new Date("2020-12-10"),
+    developer: "CD PROJEKT RED",
+    developer_country: "Poland",
+    cover_image:
+      "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+    reviews: [],
+    average_score: null,
+  },
+  {
+    id: "004",
+    title: "Hollow Knight",
+    release_date: new Date("2017-02-24"),
+    developer: "Team Cherry",
+    developer_country: "Australia",
+    cover_image:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/274px-Hollow_Knight_first_cover_art.webp.png",
+    reviews: [],
+    average_score: null,
+  },
+  {
+    id: "005",
+    title: "Stardew Valley",
+    release_date: new Date("2016-02-26"),
+    developer: "ConcernedApe",
+    developer_country: "United States",
+    cover_image:
+      "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png",
+    reviews: [],
+    average_score: null,
+  },
+];
+
+const reviews2 = [
+  // The Witcher 3 (5)
+  {
+    id: "001",
+    game: "The Witcher 3: Wild Hunt",
+    text: "A sprawling masterpiece — story, characters and worldbuilding all soar. I lost weeks to this game and never once regretted it.",
+    score: 10,
+    user: { username: "MossKnight" },
+    date: new Date("2025-03-12T10:15:00Z"),
+    likes: 8,
+  },
+  {
+    id: "002",
+    game: "The Witcher 3: Wild Hunt",
+    text: "Combat can feel clunky sometimes but the narrative and side quests are unmatched. A must-play for RPG fans.",
+    score: 9,
+    user: { username: "GreyRaven" },
+    date: new Date("2025-06-02T14:30:00Z"),
+    likes: 6,
+  },
+  {
+    id: "003",
+    game: "The Witcher 3: Wild Hunt",
+    text: "Beautiful setting, unforgettable characters, though the pacing dragged a little mid-campaign. Still brilliant overall.",
+    score: 9,
+    user: { username: "Alder" },
+    date: new Date("2025-01-21T08:45:00Z"),
+    likes: 4,
+  },
+  {
+    id: "004",
+    game: "The Witcher 3: Wild Hunt",
+    text: "Perfect combination of dark fantasy and meaningful choices. Mods only made it better — highly recommended.",
+    score: 10,
+    user: { username: "Patchwork" },
+    date: new Date("2025-07-19T19:05:00Z"),
+    likes: 7,
+  },
+  {
+    id: "005",
+    game: "The Witcher 3: Wild Hunt",
+    text: "Some quests outshine the main story — excellent writing across the board. A little long, but worth every hour.",
+    score: 10,
+    user: { username: "ProffesionalBurglar" },
+    date: new Date("2025-04-05T11:00:00Z"),
+    likes: 5,
+  },
+
+  // Hollow Knight (5)
+  {
+    id: "006",
+    game: "Hollow Knight",
+    text: "Impossibly good level and boss design. The atmosphere is oppressive in the best way.",
+    score: 10,
+    user: { username: "SilkSongSoon" },
+    date: new Date("2025-02-14T09:00:00Z"),
+    likes: 9,
+  },
+  {
+    id: "007",
+    game: "Hollow Knight",
+    text: "Beautiful, precise, and occasionally brutal. Exploration rewards patience and curiosity.",
+    score: 9,
+    user: { username: "Cinder" },
+    date: new Date("2025-05-03T16:20:00Z"),
+    likes: 7,
+  },
+  {
+    id: "008",
+    game: "Hollow Knight",
+    text: "Gorgeous art and tight controls. A few bosses overstayed their welcome but overall a phenomenal Metroidvania.",
+    score: 9,
+    user: { username: "Understone" },
+    date: new Date("2025-08-11T21:10:00Z"),
+    likes: 6,
+  },
+  {
+    id: "009",
+    game: "Hollow Knight",
+    text: "Every corner hides something brilliant. Short on hand-holding — exactly how I like it.",
+    score: 10,
+    user: { username: "Pivnich" },
+    date: new Date("2025-03-29T07:40:00Z"),
+    likes: 8,
+  },
+  {
+    id: "010",
+    game: "Hollow Knight",
+    text: "A little opaque at first, but once you click with it, this game hooks you hard. Masterclass in design.",
+    score: 10,
+    user: { username: "Glint" },
+    date: new Date("2025-09-02T12:00:00Z"),
+    likes: 5,
+  },
+
+  // Elden Ring (4)
+  {
+    id: "011",
+    game: "Elden Ring",
+    text: "Open-world Soulsborne done right. Exploration and difficulty come together beautifully.",
+    score: 10,
+    user: { username: "Ashborne" },
+    date: new Date("2025-01-10T18:00:00Z"),
+    likes: 9,
+  },
+  {
+    id: "012",
+    game: "Elden Ring",
+    text: "Huge, rewarding and occasionally overwhelming. Best experienced with a willingness to die and learn.",
+    score: 9,
+    user: { username: "OneArmedWolf" },
+    date: new Date("2025-04-22T13:30:00Z"),
+    likes: 6,
+  },
+  {
+    id: "013",
+    game: "Elden Ring",
+    text: "Landscape and bosses are spectacular, but some late-game balance issues annoyed me. Still fantastic overall.",
+    score: 9,
+    user: { username: "RuinSeeker" },
+    date: new Date("2025-06-28T05:25:00Z"),
+    likes: 4,
+  },
+  {
+    id: "014",
+    game: "Elden Ring",
+    text: "Immersive and punishing — a glorious challenge. The best kind of expensive-sounding failure.",
+    score: 10,
+    user: { username: "SilkSongSoon" },
+    date: new Date("2025-02-07T20:50:00Z"),
+    likes: 7,
+  },
+
+  // Cyberpunk 2077 (3)
+  {
+    id: "015",
+    game: "Cyberpunk 2077",
+    text: "Pre-patches it was rough, but the updated experience is slick with a terrific setting. Still some rough edges.",
+    score: 8,
+    user: { username: "NeonWolf" },
+    date: new Date("2025-05-18T11:11:00Z"),
+    likes: 5,
+  },
+  {
+    id: "016",
+    game: "Cyberpunk 2077",
+    text: "Gorgeous visuals and strong narrative beats. Performance varies, but atmosphere sells it.",
+    score: 8,
+    user: { username: "Glimmer" },
+    date: new Date("2025-07-01T09:09:00Z"),
+    likes: 3,
+  },
+  {
+    id: "017",
+    game: "Cyberpunk 2077",
+    text: "Ambitious and stylish, occasionally buggy but the core story and city never stopped impressing me.",
+    score: 7,
+    user: { username: "SilkSongSoon" },
+    date: new Date("2025-08-23T22:45:00Z"),
+    likes: 2,
+  },
+
+  // Stardew Valley (3)
+  {
+    id: "018",
+    game: "Stardew Valley",
+    text: "Pure comfort gameplay. Easy to sink dozens of hours into a tiny peaceful life.",
+    score: 9,
+    user: { username: "TurnipKing" },
+    date: new Date("2025-03-03T07:00:00Z"),
+    likes: 6,
+  },
+  {
+    id: "019",
+    game: "Stardew Valley",
+    text: "Charming and relaxing with a ton of content. Multiplayer is a lovely addition.",
+    score: 9,
+    user: { username: "Fieldhand" },
+    date: new Date("2025-06-16T15:45:00Z"),
+    likes: 4,
+  },
+  {
+    id: "020",
+    game: "Stardew Valley",
+    text: "A warm, simple loop that nails progression and variety. Not flashy, but delightful.",
+    score: 8,
+    user: { username: "ProfessionalBurglar" },
+    date: new Date("2025-09-05T10:30:00Z"),
+    likes: 3,
+  },
+];
+
+const data = { reviews, games, reviews2 };
 
 export default data;
