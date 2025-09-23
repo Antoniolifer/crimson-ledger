@@ -27,12 +27,12 @@ function GameInformation({ gameTitle }) {
 
   return (
     <div className="grid grid-cols-4 w-5/6 mx-auto">
-      <div className="col-span-1 flex flex-col items-center border-1 border-white">
+      <div className="col-span-1 flex flex-col items-center">
         {game && <GameCover game={game} />}
         {game && <GameCard game={game} />}
       </div>
 
-      <div className="col-span-3 border-1 border-white">
+      <div className="col-span-3">
         <ReviewList reviews={relevantReviews} />
       </div>
     </div>
