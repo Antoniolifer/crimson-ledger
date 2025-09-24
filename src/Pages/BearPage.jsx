@@ -58,7 +58,7 @@ function BearDisplay() {
             }}
             key={index}
           >
-            <img src="/bear.png" alt="a pixel art of a bear" />
+            <img src="bear.png" alt="a pixel art of a bear" />
           </div>
         );
       })}

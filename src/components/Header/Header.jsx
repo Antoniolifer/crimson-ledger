@@ -10,7 +10,8 @@ function Header() {
     <div className="bg-gray-700 w-full sticky mb-2 h-12 top-0 flex flex-row items-center justify-between">
       <PageSelection />
       <h1 className="text-white basis-1/5 self-center font-epunda text-2xl underline underline-offset-2 mx-2">
-        Crimson Ledger
+        <span className="text-red-500 text-3xl font-bold">C</span>rimson{" "}
+        <span className="text-red-500 text-3xl font-bold">L</span>edger
       </h1>
       {!currentUser && <SliderControl />}
       {currentUser && (

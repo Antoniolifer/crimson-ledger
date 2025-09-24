@@ -94,7 +94,7 @@ const reviews = [
     game: "Sekiro: Shadows Die Twice",
     text: "Relentless combat system that forces perfection. Frustrating at times, but the payoff is worth it.",
     score: 9,
-    user: { username: "OneArmedWolf" },
+    user: { username: "TwoTailedWolf" },
     date: new Date(),
     likes: 8,
   },
@@ -282,7 +282,7 @@ const reviews2 = [
     game: "The Witcher 3: Wild Hunt",
     text: "Some quests outshine the main story — excellent writing across the board. A little long, but worth every hour.",
     score: 10,
-    user: { username: "ProffesionalBurglar" },
+    user: { username: "ProfessionalBurglar" },
     date: new Date("2025-04-05T11:00:00Z"),
     likes: 5,
   },
@@ -349,7 +349,7 @@ const reviews2 = [
     game: "Elden Ring",
     text: "Huge, rewarding and occasionally overwhelming. Best experienced with a willingness to die and learn.",
     score: 9,
-    user: { username: "OneArmedWolf" },
+    user: { username: "TwoTailedWolf" },
     date: new Date("2025-04-22T13:30:00Z"),
     likes: 6,
   },
@@ -431,6 +431,7 @@ const reviews2 = [
   },
 ];
 
+const users = [];
 const data = { reviews, games, reviews2 };
 
 export default data;
